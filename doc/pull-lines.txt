@@ -1,0 +1,25 @@
+*pull-lines.txt* A short multi line description of your plugin
+
+===============================================================================
+CONTENTS                                                           *pull-lines*
+
+    1. Intro ............................................... |pull-lines-intro|
+    2. Requirements ................................. |pull-lines-requirements|
+    3. Usage ............................................... |pull-lines-usage|
+    4. Licence ........................................... |pull-lines-licence|
+===============================================================================
+1. Intro                                                     *pull-lines-intro*
+
+Overview of plugin
+
+2. Requirements                                       *pull-lines-requirements*
+
+What additional programs are required to run the plugin
+
+3. Usage                                                     *pull-lines-usage*
+
+How to use the plugin. What functions does it give the user?
+
+4. Licence                                                 *pull-lines-licence*
+
+This is open source make sure to include a licence
