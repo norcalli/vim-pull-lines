@@ -1,2 +1,3 @@
 def pull_lines_example(pattern):
-    return "Happy Hacking!"
+    return 'Hello world'
+    return pattern

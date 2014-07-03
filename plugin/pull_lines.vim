@@ -22,4 +22,4 @@ endfunction
 " --------------------------------
 "  Expose our commands to the user
 " --------------------------------
-command! Example call TemplateExample()
+command! -nargs=1 Example call TemplateExample(<args>)
