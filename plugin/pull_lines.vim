@@ -3,7 +3,7 @@
 " --------------------------------
 
 python << EOF
-import re
+import re, vim
 def getParameters():
   pattern = vim.eval('a:pattern')
   line1 = vim.eval('a:line1')
@@ -38,7 +38,7 @@ def manualRelocation(lines):
       residual.append(line)
     start += 1
   lines[:] = residual
-  vim.current.buffer.append(extracted, cline-offset-1)
+  vim.current.buffer.append(extracted, cline-offset)
   vim.current.window.cursor = (cline-offset, ccol)
 
 pattern, bufferRange, bang = getParameters()
