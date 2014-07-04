@@ -3,7 +3,7 @@
 " --------------------------------
 
 python << EOF
-import re
+import re, vim
 def getParameters():
   pattern = vim.eval('a:pattern')
   line1 = vim.eval('a:line1')
