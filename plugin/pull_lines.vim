@@ -39,7 +39,7 @@ def manualRelocation(lines):
     start += 1
   lines[:] = residual
   vim.current.buffer.append(extracted, cline-offset)
-  vim.current.window.cursor = (cline-offset, ccol)
+  vim.current.window.cursor = (cline-offset+1, ccol)
 
 pattern, bufferRange, bang = getParameters()
 manualRelocation(bufferRange)
