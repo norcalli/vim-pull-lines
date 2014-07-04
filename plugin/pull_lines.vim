@@ -28,15 +28,17 @@ def manualRelocation(lines):
   ccol = vim.current.window.cursor[1]
   cline = vim.current.window.cursor[0]
   offset = 0
-  for i, line in enumerate(lines, 1):
+  start = vim.current.range.start
+  for line in lines:
     if cpattern.search(line):
-      if i <= cline:
+      if start <= cline:
         offset += 1
       extracted.append(line)
     else:
       residual.append(line)
+    start += 1
   lines[:] = residual
-  lines.append(extracted, cline-offset)
+  vim.current.buffer.append(extracted, cline-offset-1)
   vim.current.window.cursor = (cline-offset, ccol)
 
 pattern, bufferRange, bang = getParameters()
